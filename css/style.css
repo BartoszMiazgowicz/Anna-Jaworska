@@ -719,34 +719,13 @@ body.loading {
     display: inline-block;
 }
 
-.image-placeholder {
+.profile-image {
     width: 300px;
     height: 380px;
-    background: var(--gradient-primary);
+    object-fit: cover;
+    object-position: center top;
     border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.image-placeholder::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.1) 100%);
-}
-
-.placeholder-initials {
-    font-family: var(--font-display);
-    font-size: 5rem;
-    font-weight: 700;
-    color: rgba(255,255,255,0.9);
-    text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: block;
 }
 
 .image-decoration {
@@ -1264,13 +1243,9 @@ body.loading {
         text-align: center;
     }
 
-    .image-placeholder {
+    .profile-image {
         width: 250px;
         height: 320px;
-    }
-
-    .placeholder-initials {
-        font-size: 4rem;
     }
 }
 
