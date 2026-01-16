@@ -717,15 +717,20 @@ body.loading {
 .image-frame {
     position: relative;
     display: inline-block;
+    width: 300px;
+    height: 380px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
 }
 
 .profile-image {
-    width: 300px;
-    height: 380px;
+    width: 115%;
+    height: 115%;
     object-fit: cover;
-    object-position: center top;
-    border-radius: var(--radius-lg);
+    object-position: center 15%;
     display: block;
+    margin-left: -7.5%;
+    margin-top: -5%;
 }
 
 .image-decoration {
@@ -1243,7 +1248,7 @@ body.loading {
         text-align: center;
     }
 
-    .profile-image {
+    .image-frame {
         width: 250px;
         height: 320px;
     }
